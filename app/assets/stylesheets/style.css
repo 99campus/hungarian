@@ -68,3 +68,14 @@ html, body {
 .m-t-15{
   margin-top:15px;
 }
+
+#placeValue{
+  background-color: #E0E0E0;
+  padding: 20px;
+  font-weight: 800;
+}
+
+#placePoint{
+  text-indent: 10px;
+  font-weight: 100;
+}
