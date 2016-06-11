@@ -17,6 +17,14 @@ html, body {
   padding: 20px 40px;
 }
 
+.header .icon{
+  float: left;
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
 .header{
   height: 60px;
   background-color: #5987DA;
@@ -55,4 +63,8 @@ html, body {
 
 .m-t-30{
   margin-top:30px;
+}
+
+.m-t-15{
+  margin-top:15px;
 }

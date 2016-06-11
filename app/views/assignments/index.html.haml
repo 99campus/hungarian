@@ -8,9 +8,9 @@
       .form
         = form_tag(new_assignment_path, :method => :get,:remote => true) do
           .col-md-6.centered-column.m-t-30
-            = text_field_tag :array,"",:placeholder =>"Enter array",:class => "hungarian-text",:required=> true
+            = text_field_tag :array,"",:placeholder =>"Enter the sqare matrix. eg: [[1,2,3],[4,5,6],[7,8,9]]",:class => "hungarian-text",:required=> true
           .clear_both
-          .col-md-3.centered-column.m-t-30
+          .col-md-3.centered-column.m-t-15
             =submit_tag "submit", :class => "hungarian-button"
 
 #placeValue
