@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+  min-height: 90%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+}
+.footer, .push {
+  height: 55px;
+  background-color: #EFEFEF;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.header{
+  height: 60px;
+  background-color: #5987DA;
+}
+
+.tag-details{
+  margin-top: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hungarian-text{
+  border: 1px solid #E6E6E6;
+  padding: 10px;
+  width: 100%;
+}
+
+.hungarian-button{
+  background-color: #5987DA;
+  border: 0px;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.centered-column{
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.clear-both{
+  clear: both;
+}
+
+.m-t-30{
+  margin-top:30px;
+}

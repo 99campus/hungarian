@@ -1,0 +1,16 @@
+.container-fluid
+  .row
+    .col-lg-12.col-md-12
+      .tag-details
+        Find the most efficient way to assign the tasks
+  .row
+    .col-lg-12.col-md-12
+      .form
+        = form_tag(new_assignment_path, :method => :get,:remote => true) do
+          .col-md-6.centered-column.m-t-30
+            = text_field_tag :array,"",:placeholder =>"Enter array",:class => "hungarian-text",:required=> true
+          .clear_both
+          .col-md-3.centered-column.m-t-30
+            =submit_tag "submit", :class => "hungarian-button"
+
+#placeValue
