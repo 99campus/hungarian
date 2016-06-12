@@ -1,7 +1,4 @@
 class Assignment
-
-  attr_accessor :matrix, :covered_columns, :covered_rows, :starred_zeros, :primed_zeros, :primed_starred_series
-
   def self.assign(arr)
     @error = 0
     @array = arr
@@ -18,7 +15,6 @@ class Assignment
     while not (0...@array.first.size).to_a.size == @covered_columns.size
       p = cover_zeros_and_create_more
       find_better_stars p
-      #create series
       cover_columns_with_stars
     end
     @final = @starred_zeros.delete_if{|row_index,col_index| col_index >= @original.first.size || row_index >= @original.size}
@@ -129,7 +125,7 @@ class Assignment
     end
 
 
-    my_cols = (0...@array.first.size).to_a - @covered_columns #silly workaround to cache the list
+    my_cols = (0...@array.first.size).to_a - @covered_columns
     
     uncovered_rows.each do |row_index|
       my_cols.each do |col_index|
@@ -140,7 +136,7 @@ class Assignment
 
   def self.smallest_uncovered_value
     min_value = nil 
-    my_cols = (0...@array.first.size).to_a - @covered_columns #silly workaround to cache the list
+    my_cols = (0...@array.first.size).to_a - @covered_columns
     uncovered_rows.each do |row_index|
       my_cols.each do |col_index|
         value = @array[row_index][col_index]
