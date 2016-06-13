@@ -1,1 +1,5 @@
-$('#placePoint').html("<%= @final_value %>");
+<% if @error_point > 0 %>
+  $('#placePoint').html("<%= @final_value %>");
+<% else %>
+  $('#placePoint').html("The optimum solution of <b><%=@orig %></b> is <b><%= @final_value.join(",") %></b> with index <b><%=@final_index %></b>");
+<% end %>

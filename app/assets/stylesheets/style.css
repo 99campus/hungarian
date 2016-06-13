@@ -79,3 +79,28 @@ html, body {
   text-indent: 10px;
   font-weight: 100;
 }
+
+.right{
+  float: right;
+}
+
+.menu{
+  padding: 20px;
+  margin-right: 10%;
+}
+
+.menu ul{
+  white-space: nowrap;
+}
+.menu ul li{
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  color: #ffffff;
+}
+
+.custom-pad{
+  padding: 10px 50px;
+}

@@ -11,6 +11,12 @@
   %body
     %header.header
       .icon Hungarian
+      .right.menu
+        %ul
+          %li
+            =link_to "Home", root_path
+          %li 
+            =link_to "Need help?", about_path
     .wrapper
       = yield
     .clear_both

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'assignments#index'
+  get "about", :to => 'assignments#about'
   resources :assignments do
     get 'assign'
   end

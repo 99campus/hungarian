@@ -148,4 +148,13 @@ class Assignment
     min_value
   end
 
+  def self.formatize(original,array)
+    final_view = []
+    array.each_with_index do |val|
+      value = "#{original[val[0]][val[1]]}"
+      final_view.push(value.to_i)
+    end
+    final_view
+  end
+
 end

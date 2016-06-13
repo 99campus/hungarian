@@ -1,0 +1,49 @@
+.container-fluid
+  .row
+    .col-lg-11.col-md-11.custom-pad
+      %p
+        %b The Assignment Problem
+        %p
+          The assignment problem deals with assigning machines to tasks, workers to jobs, soccer players to positions, and so on. The goal is to determine the optimum assignment that, for example, minimizes the total cost or maximizes the team effectiveness.
+      %p
+        %b The Hungarian Algorithm
+        %p
+          The Hungarian algorithm is an easy to understand and easy to use algorithm that solves the assignment problem.
+      %p
+        %b About the Application
+        %p
+          This application is the simplified solution of the hungarian algorithm. In this application, a user have to input the men vs task matrix and the output will be the optimal solution of that matrix. Following are the steps to use this application.
+        %ul
+          %li 
+            Prepare a matrix of men vs task. Eg: [[250,400,350],[400,600,350],[200,400,250]]
+            %pre Note: The matrix should be square metrix.
+          %li 
+            Insert the matrix in the given input box.
+          %li 
+            Press submit button to view the result.
+      %p
+        %b Example:
+        %p Let us suppose our men vs task matrix is:
+        %pre
+          [[250,400,350],[400,600,350],[200,400,250]]
+        %p By clicking on the submit button, the result displayed on screen will be,
+        %pre
+          The optimum solution of [[250, 400, 350], [400, 600, 350], [200, 400, 250]] is 350,200,400 with index [[1, 2], [2, 0], [0, 1]]
+      %p
+        %b Reference links
+        %p For more details and deep understanding, please visit the given below links.
+        %ul
+          %li
+            %a{:href => "https://en.wikipedia.org/wiki/Hungarian_algorithm", :target => "_blank"}
+              Wikipedia: Hungarian Algorithm
+          %li
+            %a{:href => "https://www.topcoder.com/community/data-science/data-science-tutorials/assignment-problem-and-hungarian-algorithm/", :target => "_blank"}
+              Topcoder: Hungarian Algorithm
+          %li
+            %a{:href => "http://www.wikihow.com/Use-the-Hungarian-Algorithm", :target => "_blank"}
+              Wikihow: Hungarian Algorithm
+          %li
+            %a{:href => "http://hungarianalgorithm.com/", :target => "_blank"}
+              Hungarian Algorithm
+        %br
+        %br
