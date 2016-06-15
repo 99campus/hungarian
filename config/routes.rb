@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     get 'assign'
   end
 
+  namespace :api, defaults: {format: :json}, constraints: {subdomain: 'developer'}, path: '/' do
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
